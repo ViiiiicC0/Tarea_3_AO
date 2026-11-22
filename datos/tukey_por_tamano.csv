@@ -1,0 +1,10 @@
+tamano,group1,group2,meandiff,p-adj,lower,upper,reject,nota
+5,bajo,medio,0.0,,,,False,Sin variación: las 10 réplicas alcanzaron el mismo costo.
+5,bajo,alto,0.0,,,,False,Sin variación: las 10 réplicas alcanzaron el mismo costo.
+5,medio,alto,0.0,,,,False,Sin variación: las 10 réplicas alcanzaron el mismo costo.
+10,alto,bajo,-26.8379,0.0009,-42.9567,-10.7191,True,
+10,alto,medio,-9.6748,0.3123,-25.7936,6.444,False,
+10,bajo,medio,17.1631,0.0352,1.0443,33.2819,True,
+15,alto,bajo,-102.7911,0.0,-126.7687,-78.8134,True,
+15,alto,medio,-11.5657,0.4657,-35.5433,12.412,False,
+15,bajo,medio,91.2254,0.0,67.2478,115.203,True,

@@ -1,0 +1,30 @@
+{
+  "matricula": 2177628,
+  "r": 0.5673736344116567,
+  "t_min": 1.0,
+  "t_max": 100.0,
+  "niveles": {
+    "bajo": {
+      "fraccion": 0.170212090323497,
+      "temperatura": 17.850996942026203
+    },
+    "medio": {
+      "fraccion": 0.470212090323497,
+      "temperatura": 47.5509969420262
+    },
+    "alto": {
+      "fraccion": 0.770212090323497,
+      "temperatura": 77.2509969420262
+    }
+  },
+  "tamanos": [
+    5,
+    10,
+    15
+  ],
+  "replicas": 10,
+  "max_iter": 500,
+  "cooling": 0.9985,
+  "alpha": 0.05,
+  "bootstrap_reps": 10000
+}
