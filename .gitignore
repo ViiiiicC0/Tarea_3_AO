@@ -20,3 +20,7 @@ Thumbs.db
 
 # Salidas temporales
 *.tmp
+
+# Reporte y generador: se entregan por separado, no se versionan
+reporte/
+src/generar_reporte.py

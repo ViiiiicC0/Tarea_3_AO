@@ -3,8 +3,8 @@
 Implementación del **Ejercicio 1**: ajuste de la temperatura inicial `T0` del
 Recocido Simulado con 2-opt sobre el TSP, usando un diseño factorial completo
 3×3 con 10 réplicas por punto de diseño (90 corridas). Incluye ANOVA de dos
-factores, comparaciones de Tukey, pruebas robustas, bootstrap de la mediana y
-un reporte PDF con todas las gráficas.
+factores, comparaciones de Tukey, pruebas robustas y bootstrap de la mediana.
+El reporte PDF con todas las gráficas se entrega por separado.
 
 ## Contenido
 
@@ -12,10 +12,8 @@ un reporte PDF con todas las gráficas.
 |---|---|
 | [`src/sa_tsp.py`](src/sa_tsp.py) | SA + 2-opt para TSP, adaptado del Ejercicio 4 de la Tarea 2 con RNG local por corrida. |
 | [`src/ejercicio1_doe.py`](src/ejercicio1_doe.py) | Experimento completo: diseño, 90 corridas, ANOVA, Tukey, Kruskal-Wallis, Welch, bootstrap, calibración y gráficas. |
-| [`src/generar_reporte.py`](src/generar_reporte.py) | Construye el reporte PDF a partir de los archivos en `datos/` y `graficas/`. |
 | [`datos/`](datos/) | Resultados crudos y tablas derivadas (CSV/JSON). |
 | [`graficas/`](graficas/) | Siete figuras en alta resolución (300 dpi). |
-| [`reporte/Reporte_Tarea_3.pdf`](reporte/Reporte_Tarea_3.pdf) | Reporte final. |
 
 ## Resultados destacados
 
@@ -81,9 +79,6 @@ pip install -r requirements.txt
 ```bash
 # Genera datos/ y graficas/ (90 corridas + calibración)
 python src/ejercicio1_doe.py
-
-# Genera reporte/Reporte_Tarea_3.pdf
-python src/generar_reporte.py
 ```
 
 Si se ejecuta en un entorno sin pantalla, el primer script ya usa el backend
@@ -114,8 +109,7 @@ Tarea_3_AO/
 ├── requirements.txt
 ├── src/
 │   ├── sa_tsp.py
-│   ├── ejercicio1_doe.py
-│   └── generar_reporte.py
+│   └── ejercicio1_doe.py
 ├── datos/
 │   ├── resultados.csv
 │   ├── diseno.json
@@ -130,16 +124,14 @@ Tarea_3_AO/
 │   ├── mejor_por_tamano.csv
 │   ├── calibracion.csv
 │   └── calibracion_resumen.csv
-├── graficas/
-│   ├── instancias.png
-│   ├── calibracion.png
-│   ├── efectos_principales.png
-│   ├── interaccion.png
-│   ├── boxplots.png
-│   ├── diagnostico_residuos.png
-│   └── bootstrap_medianas.png
-└── reporte/
-    └── Reporte_Tarea_3.pdf
+└── graficas/
+    ├── instancias.png
+    ├── calibracion.png
+    ├── efectos_principales.png
+    ├── interaccion.png
+    ├── boxplots.png
+    ├── diagnostico_residuos.png
+    └── bootstrap_medianas.png
 ```
 
 ## Gráficas
@@ -157,7 +149,7 @@ Tarea_3_AO/
 ## Reporte
 
 El análisis completo, las tablas ANOVA y bootstrap, las gráficas y las
-respuestas a las preguntas analíticas están en
-[`reporte/Reporte_Tarea_3.pdf`](reporte/Reporte_Tarea_3.pdf).
+respuestas a las preguntas analíticas se entregan en un PDF por separado;
+ese archivo no forma parte de este repositorio.
 
 **Repositorio público:** https://github.com/ViiiiicC0/Tarea_3_AO
